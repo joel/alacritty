@@ -13,7 +13,7 @@ opacity = 0.98
 [keyboard]
 bindings = [
 { key = "F11", action = "ToggleFullscreen" },
-{ key = "W", mods = "Control", action = "Quit" },
-{ key = "Q", mods = "Control", action = "Quit" },
+{ key = "W", mods = "Control", command = { program = "/bin/sh", args = ["-c", "osascript -e 'display dialog \"Quit Alacritty?\" buttons {\"Cancel\", \"Quit\"} default button \"Cancel\" with icon caution' && pkill -x alacritty"] } },
+{ key = "Q", mods = "Control", command = { program = "/bin/sh", args = ["-c", "osascript -e 'display dialog \"Quit Alacritty?\" buttons {\"Cancel\", \"Quit\"} default button \"Cancel\" with icon caution' && pkill -x alacritty"] } },
 { key = "N", mods = "Control", action = "SpawnNewInstance" }
 ]
