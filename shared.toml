@@ -9,6 +9,8 @@ padding.x = 16
 padding.y = 14
 decorations = "None"
 opacity = 0.98
+# Treat the macOS Option key as Alt/Meta so Zellij's `Alt …` bindings work
+option_as_alt = "Both"
 
 [keyboard]
 bindings = [
